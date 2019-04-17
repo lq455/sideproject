@@ -1,33 +1,97 @@
-.App {
+/*HEADLINE COMPONENT*/
+.background{
+
+background-color: bisque
+
+}
+.headline{
+  margin:auto;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+
+.logo{
+  width:83px;
+  height:85px;
+  background-image:url(./maozhua3.jpeg) ;
+  display:inline-block;
+  margin-right:30px;
+}
+.headline h1{
+  display:inline-block;
+  font-size: 4em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*INPUT COMPONENT*/
+
+.inputComp{
+  margin: auto;
+  text-align: center;
+  height:130px;
+}
+.inputComp input{
+  margin-top:40px;
+  font-size: 2em;
+  margin-right: 10px;
+}
+.inputComp button{
+  margin-top:40px;
+  font-size: 2em;
+  background-color:lightcyan;
+}
+
+/*DISPLAY COMPONENT*/
+
+.display{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 660px;
+  margin: auto;
+  margin-top:50px;
 }
 
-.App-link {
-  color: #61dafb;
+.display .box{
+  width: 200px;
+  height: 200px;
+  
+  background-color: rgba(223, 203, 203, 0.233);
+  margin:10px;
+  padding-top: 15px;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.display .box p{
+
+  color: black;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+.image{
+  width: 200px;
+  height: 200px;
+}
+
+/*this next part is just for us to see the component better while*/
+/*buidling it*/
+
+.headline{
+  outline: 1px lightgrey solid;
+  outline-offset:-20px;
+}
+
+.inputComp{
+  outline: 1px lightgrey solid;
+  outline-offset:-20px;
+}
+
+.display{
+  outline: 1px lightgrey solid;
+  outline-offset:30px;
+  background-color: blanchedalmond
+}
+
+.whole{
+
+  background-color: bisque
 }
